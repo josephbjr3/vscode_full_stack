@@ -1,14 +1,34 @@
 h3 {
-    color: indigo  ; /*changes text color*/
-    background-color: pink; /*only changes the background color*/
+    color: indigo  ; /* changes text color */
+    background-color: rgb(89,  151, 0); /* only changes the background color */
+    text-align: center;
+    width: 50%;
+    font-weight: normal; /* controls the boldness of the font */
+    text-decoration: blue underline wavy; /* adds a  wavy blue underline */
+    font-size: 25px;
+    font-family: Times New Roman, Helvetica; /* changes font type, helvetica is my backup in case the browser doesn't have times new roman */
 }
 
 button {
-    color:red;
+    color: #5FCFFC;
     background-color: blue;
+    font-weight: 700;
+    letter-spacing: 10px; 
 }
 
 p {
-    color: blue;
-    background: orange; /*does a lot more than backgroun color, ie can set a background img
+    color: #000;/* if either of the rgb hex values contain duplicate digits, you can represent it with 3 digits instead of 6 */
+    background: orange; /* does a lot more than backgroun color, ie can set a background img */
+    text-align: right;
+    font-weight: bold;
+    line-height: 2; /* adjusts line spacing. 2 = double space */ 
+    
+}
+
+body {
+    background: khaki; /* if either of the rgb hex values contain duplicate digits, you can represent it with 3 digits instead of 6 */
+}
+
+a {
+    text-decoration: none;
 }

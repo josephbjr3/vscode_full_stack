@@ -1,0 +1,14 @@
+h3 {
+    color: indigo  ; /*changes text color*/
+    background-color: pink; /*only changes the background color*/
+}
+
+button {
+    color:red;
+    background-color: blue;
+}
+
+p {
+    color: blue;
+    background: orange; /*does a lot more than backgroun color, ie can set a background img
+}

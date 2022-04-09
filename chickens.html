@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<!--a flag that tells your browser you want to use HTML5, doesn't have closing tag.-->
+<!-- a flag that tells your browser you want to use HTML5, doesn't have closing tag. -->
 <html>
-<!--html tag is the top level elemnt of your html file. Everything always goes in you html tags-->
+<!-- html tag is the top level elemnt of your html file. Everything always goes in you html tags -->
 
 <head>
-    <!--head tags is for metadata about the file (i.e. style sheets used). html tags allows one head and one body tag-->
+    <!-- head tags is for metadata about the file (i.e. style sheets used). html tags allows one head and one body tag -->
     <title>Chickens R US</title>
-            <!-- title appears in the tab. the title you'll see in a google link-->
+            <!-- title appears in the tab. the title you'll see in a google link -->
 </head>
 
 <body>
     <h1>Chickens</h1>
-    <!--Use only one h1 heading per page, use it for the title-->
+    <!-- Use only one h1 heading per page, use it for the title -->
+
+    <img src="cake_cutter.png"> <!-- img has no closing tag; src =  file path or link to image -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Male_and_female_chicken_sitting_together.jpg/220px-Male_and_female_chicken_sitting_together.jpg" alt="This is a pic of chickens."> <!-- alt is used to describe the picture for screen readers -->
+
+    <a href="https://google.com">I am a link.</a> <!-- this is an anchor tag. href is attr.; an attr. is a piece of info that goes inside the tag; anchor tags don't take up a whole line -->
 
     <p>Chicken <b>taste</b> I like fried chicken.</p>
 
@@ -19,7 +24,7 @@
 
     <h2>Terminology</h2>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor iusto tempora blanditiis, nulla tempore
+        Lorem ipsum dolor sit amet <a href="https://google.com"> adipisicing</a> elit. Quas dolor iusto tempora blanditiis, nulla tempore
         eaque
         maxime suscipit officia? Fugit veritatis id maiores animi ad labore voluptates suscipit excepturi illum?Lorem,
         ipsum dolor sit amet consectetur adipisicing elit. Labore libero, vel earum aperiam corporis perferendis ipsam
@@ -54,18 +59,18 @@
         Ipsum dolor officia saepe, quos ullam sit deserunt doloremque nesciunt, laudantium veritatis, praesentium
         adipisci beatae magnam eveniet tempora architecto quae! Nam ea eius unde quo in qui debitis magnam. Dolorum?
     </p>
-    <!--Note: use the headers in order from h1-h6, don't skip-->
+    <!-- Note: use the headers in order from h1-h6, don't skip -->
     <h3>Breeds</h3>
-    <ul> <!-- unordered list (ul) (aka bulleted list)-->
-        <li>Golden Retriever</li> <!-- list items (li) need to be inside ul's or ol's-->
+    <ul> <!-- unordered list (ul) (aka bulleted list) -->
+        <li>Golden Retriever</li> <!-- list items (li) need to be inside ul's or ol's -->
         <li>German Shepherd</li>
         <li>Poodle</li>
         <li>Labrador Retriever</li>
     </ul>
-    <ol> <!-- ordered list (ol) (aka numbered list)-->
+    <ol> <!-- ordered list (ol) (aka numbered list) -->
         <li>Golden Retriever
             <ul>
-                <li>Jace</li> <!-- creates sub bullet point-->
+                <li>Jace</li> <!-- creates sub bullet point (list nesting) -->
             </ul>
         </li>
 

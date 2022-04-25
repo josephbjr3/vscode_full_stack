@@ -1,84 +1,117 @@
 <!DOCTYPE html>
-<!-- a flag that tells your browser you want to use HTML5, doesn't have closing tag. -->
+<!-- a flag that tells your browser you want to use HTML5, doesn't have closing tag. Optional -->
 <html>
 <!-- html tag is the top level elemnt of your html file. Everything always goes in you html tags -->
 
 <head>
     <!-- head tags is for metadata about the file (i.e. style sheets used). html tags allows one head and one body tag -->
     <title>Chickens R US</title>
-            <!-- title appears in the tab. the title you'll see in a google link -->
+    <!-- title appears in the tab. the title you'll see in a google link -->
 </head>
 
 <body>
-    <h1>Chickens</h1>
-    <!-- Use only one h1 heading per page, use it for the title -->
+    <nav> <!-- same as a div, different name, used for nav bars-->
+        <ul>
+            <li> <a href="Home"> Home </a> </li>
+            <li> <a href="About"> About </a></li>
+            <li><a href="Contact"> Contact</a></li>
+        </ul>
+    </nav>
+    <main> <!-- same as div, different name, used for your main content-->
+        <h1>Chickens</h1>
+        <!-- Use only one h1 heading per page, use it for the title -->
+        <hr> <!-- horization rule - adds a black line by defaultv-->
 
-    <img src="cake_cutter.png"> <!-- img has no closing tag; src =  file path or link to image -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Male_and_female_chicken_sitting_together.jpg/220px-Male_and_female_chicken_sitting_together.jpg" alt="This is a pic of chickens."> <!-- alt is used to describe the picture for screen readers -->
+        <h2>YOU FIT INTO ME</h2>
+        <p>
+            you fit into me <br> <!-- br = break, goes to a new line -->
+            like a hook into an eye <br>
+            a fish hook <br>
+            an open eye <br>
+        </p>
 
-    <a href="https://google.com">I am a link.</a> <!-- this is an anchor tag. href is attr.; an attr. is a piece of info that goes inside the tag; anchor tags don't take up a whole line -->
+        <p> 
+            This is a super script <sup>2</sup>. <br> <!-- sup = superscript -->
+            This is a sub script <sub>2</sub>. <br> <!-- sub = subscript -->
+        </p>
 
-    <p>Chicken <b>taste</b> I like fried chicken.</p>
+        <img src="cake_cutter.png"> <!-- img has no closing tag; src =  file path or link to image -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Male_and_female_chicken_sitting_together.jpg/220px-Male_and_female_chicken_sitting_together.jpg"
+            alt="This is a pic of chickens."> <!-- alt is used to describe the picture for screen readers -->
 
-    <p>Chickens is red. Chicken is blue. I see you.</p>
+        <a href="https://google.com">I am a link.</a>
+        <!-- this is an anchor tag. href is attr.; an attr. is a piece of info that goes inside the tag; anchor tags don't take up a whole line -->
 
-    <h2>Terminology</h2>
-    <p>
-        Lorem ipsum dolor sit amet <a href="https://google.com"> adipisicing</a> elit. Quas dolor iusto tempora blanditiis, nulla tempore
-        eaque
-        maxime suscipit officia? Fugit veritatis id maiores animi ad labore voluptates suscipit excepturi illum?Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Labore libero, vel earum aperiam corporis perferendis ipsam
-        inventore tempora magni quidem, ut sequi illo dignissimos mollitia, est dicta voluptatum eum deserunt!
-        Ipsum quibusdam repellendus hic, deleniti minus rem delectus, architecto maiores reprehenderit sequi cupiditate
-        suscipit dolores ut, voluptate blanditiis ratione modi exercitationem! Earum dolor quidem veritatis accusantium
-        necessitatibus iste nobis rem.
-        Nisi ut laboriosam voluptatem tenetur voluptatum veritatis doloremque consequuntur voluptates neque impedit
-        velit nesciunt ipsam eos nemo ducimus sed repellendus, quam dicta quod esse pariatur exercitationem eaque quasi?
-        Fuga, quas!
-        Voluptas accusamus perspiciatis temporibus eos quo, expedita est accusantium, consectetur aut nostrum
-        repudiandae corrupti quisquam eius iure hic? Tenetur aut reiciendis saepe quas? Error accusamus similique culpa
-        dicta accusantium quidem.
-        Quam, quaerat rem molestias placeat minima quo qui dolorum tempora nisi voluptates, rerum tenetur quidem cum
-        laudantium aperiam aliquam exercitationem eius praesentium omnis sed vero. Sunt hic voluptate reprehenderit
-        doloribus.
-    </p>
+        <p>Chicken <b>taste</b> I like fried chicken.</p>
 
-    <h2>General biology and habitat</h2>
-    <h3>Behavior</h3>
-    <h4>Social behaviour</h4>
-    <h4>Broodiness</h4>
-    <h5>I am H5.</h5>
-    <h6>I am H6.</h6>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore impedit perferendis explicabo consequatur
-        animi soluta, excepturi molestias necessitatibus sit deleniti nemo voluptate totam quidem, illo exercitationem
-        omnis autem ab.
-        Voluptatum alias neque ab voluptatem assumenda accusamus expedita fuga culpa tempore. Laboriosam recusandae
-        deserunt totam consequuntur eaque, ipsa ex placeat. Vitae dignissimos at porro animi earum, odio ipsa quo
-        blanditiis?
-        Ipsum dolor officia saepe, quos ullam sit deserunt doloremque nesciunt, laudantium veritatis, praesentium
-        adipisci beatae magnam eveniet tempora architecto quae! Nam ea eius unde quo in qui debitis magnam. Dolorum?
-    </p>
-    <!-- Note: use the headers in order from h1-h6, don't skip -->
-    <h3>Breeds</h3>
-    <ul> <!-- unordered list (ul) (aka bulleted list) -->
-        <li>Golden Retriever</li> <!-- list items (li) need to be inside ul's or ol's -->
-        <li>German Shepherd</li>
-        <li>Poodle</li>
-        <li>Labrador Retriever</li>
-    </ul>
-    <ol> <!-- ordered list (ol) (aka numbered list) -->
-        <li>Golden Retriever
-            <ul>
-                <li>Jace</li> <!-- creates sub bullet point (list nesting) -->
-            </ul>
-        </li>
+        <p>Chickens is red. Chicken is blue. I see you.</p>
+
+        <section>
+            <h2>Terminology</h2>
+            <p>
+                Lorem ipsum dolor sit amet <a href="https://google.com"> adipisicing</a> elit. Quas dolor iusto tempora
+                blanditiis, nulla tempore
+                eaque
+                maxime suscipit officia? Fugit veritatis id maiores animi ad labore voluptates suscipit excepturi illum?Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Labore libero, vel earum aperiam corporis perferendis ipsam
+                inventore tempora magni quidem, ut sequi illo dignissimos mollitia, est dicta voluptatum eum deserunt!
+                Ipsum quibusdam repellendus hic, deleniti minus rem delectus, architecto maiores reprehenderit sequi cupiditate
+                suscipit dolores ut, voluptate blanditiis ratione modi exercitationem! Earum dolor quidem veritatis accusantium
+                necessitatibus iste nobis rem.
+                Nisi ut laboriosam voluptatem tenetur voluptatum veritatis doloremque consequuntur voluptates neque impedit
+                velit nesciunt ipsam eos nemo ducimus sed repellendus, quam dicta quod esse pariatur exercitationem eaque quasi?
+                Fuga, quas!
+                Voluptas accusamus perspiciatis temporibus eos quo, expedita est accusantium, consectetur aut nostrum
+                repudiandae corrupti quisquam eius iure hic? Tenetur aut reiciendis saepe quas? Error accusamus similique culpa
+                dicta accusantium quidem.
+                Quam, quaerat rem molestias placeat minima quo qui dolorum tempora nisi voluptates, rerum tenetur quidem cum
+                laudantium aperiam aliquam exercitationem eius praesentium omnis sed vero. Sunt hic voluptate reprehenderit
+                doloribus.
+            </p>
+        </section>
+
+        <h2>General biology and habitat</h2>
+        <h3>Behavior</h3>
+        <h4>Social behaviour</h4>
+        <h4>Broodiness</h4>
+        <h5>I am H5.</h5>
+        <h6>I am H6.</h6>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore impedit perferendis explicabo consequatur
+            animi soluta, excepturi molestias necessitatibus sit deleniti nemo voluptate totam quidem, illo exercitationem
+            omnis autem ab.
+            Voluptatum alias neque ab voluptatem assumenda accusamus expedita fuga culpa tempore. Laboriosam recusandae
+            deserunt totam consequuntur eaque, ipsa ex placeat. Vitae dignissimos at porro animi earum, odio ipsa quo
+            blanditiis?
+            Ipsum dolor officia saepe, quos ullam sit deserunt doloremque nesciunt, laudantium veritatis, praesentium
+            adipisci beatae magnam eveniet tempora architecto quae! Nam ea eius unde quo in qui debitis magnam. Dolorum?
+        </p>
+        <!-- Note: use the headers in order from h1-h6, don't skip -->
+        <h3>Breeds</h3>
+        <ul>
+            <!-- unordered list (ul) (aka bulleted list) -->
+            <li>Golden Retriever</li> <!-- list items (li) need to be inside ul's or ol's -->
+            <li>German Shepherd</li>
+            <li>Poodle</li>
+            <li>Labrador Retriever</li>
+        </ul>
+        <ol>
+            <!-- ordered list (ol) (aka numbered list) -->
+            <li>Golden Retriever
+                <ul>
+                    <li>Jace</li> <!-- creates sub bullet point (list nesting) -->
+                </ul>
+            </li>
 
 
-        <li>German Shepherd</li>
-        <li>Poodle</li>
-        <li>Labrador Retriever</li>
-    </ol>
+            <li>German Shepherd</li>
+            <li>Poodle</li>
+            <li>Labrador Retriever</li>
+        </ol>
+    </main>
+    <footer>
+        Footer placeholder
+    </footer>
 </body>
 
 </html>

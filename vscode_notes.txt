@@ -1,0 +1,9 @@
+Shortcut:
+
+duplicate to line below - shift + alt + down
+duplicate to line above - shift + alt + up
+
+move a line up opt + up
+move a line down opt + down
+
+comment line 

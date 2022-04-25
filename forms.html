@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos"> <!-- a form is a container that sends inputted data to a specified location -->
+        <p>
+            <input> <!-- no closing tag, defaults to a text input -->
+        </p>
+        <p>
+            <label for="username">Enter username:</label> <!-- labels are important for screen readers, "for" paramater details what's the label for (matches the id of the corresponding input element)-->
+            <input id="username" type="text" placeholder="username" name="username"> <!-- name attr. is important for sending data to a server-->
+        </p>
+        <p>
+            <label for="password">Enter password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="age">Enter age:</label>
+            <input type="number" placeholder="age" name="age" min="1" max="2000" step = "2"> <!-- min, max, and step are optional; step is 1 by default-->           
+        </p>
+        <p>
+            <input type="color" name="color">            
+        </p>       
+        <button>Submit</button> <!-- default action is to submit when inside a form -->
+        <input type="submit"> <!-- another way to create a submit button, use value="*button label*" to change the button label -->
+        <button type="button">non-Submit button</button> <!-- [type="button"] does not submit -->
+    </form>
+
+    <h3>Google Search</h3>
+    <form action="https://google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h2>Checkbox Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree" id="agree"> <!-- unchecked by default -->
+        <label for="agree">I agree.</label>
+        <input type="checkbox" name="agree_checked" id="agree_checked" checked> <!-- checked by default -->
+        <label for="agree_checked">I agree. (checked by default)</label>
+        <button>Submit</button> <!-- when checked, it submits "on"; when unchecked, it doesn't submit anything-->
+    </form>
+
+    <h2>Radio Inputs</h2>
+    <form action="/birds">
+        <input type="radio" name="radio" id="yes" value="yes"> <!-- to be considered as a group, all of the radio input need the same name attr.; need value attr. to give it a unique name in the URL instead of "on" or "off" -->
+        <label for="yes">Yes</label>
+        <input type="radio" name="radio" id="no" value="no">
+        <label for="no">No</label>
+        <button>Submit</button> <!-- when checked, it submits "on"; when unchecked, it doesn't submit anything-->
+    </form> 
+    
+    <h2>Select Input (drop-down menu)</h2> 
+    <form action="/birds">
+        <label for="meals">Select your meal</label>
+        <select name="meals" id="meals">
+            <option value="Meals">-- Meals --</option>
+            <option value="Fish">Fish</option>
+            <option value="Steak">Steak</option>
+            <option value="Chicken">Chicken</option>
+        </select>
+        <button>Submit</button>
+    </form> 
+
+    <h2>Other Misc. Inputs</h2> 
+    <form action="/birds">
+        <label for="cheese">Amount of Cheese:</label>
+        <input type="range" name="cheese_amount" id="cheese" min="0" max="10" step="2" value="6"> <!--step is not needed, will be 1 by default; value attr. = default value (not needed, default is your min value) -->
+        <div>
+            <label for="requests">Any additional requests?</label>
+            <br>
+            <textarea name="requests" id="requests" rows="5" cols="40" placeholder="Type here..." ></textarea> <!-- not an input! -->
+        </div>
+        <button>Submit</button>             
+    </form>  
+
+    <h2>HTML5 form validations demo</h2>
+    <form action="/template">
+        <label for="first_name">Enter First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="First Name" required> <!-- required attr. makes the input required -->
+        <div>
+            <label for="username">Enter username:</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="10" required> <!-- minlength and maxlength attr. specify the min and max length of the text inputted; maxlength attr. won't allow more text than specified -->
+        </div>
+        <div>
+            <!-- some input types have built-in validation. For example, email looks for a pattern (but doesn't check for a legit email or ".com" part of the email) -->
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

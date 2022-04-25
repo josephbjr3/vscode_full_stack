@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Heaviest Birds Table</title>
+</head>
+
+<body>
+    <h1>Heaviest Birds</h1>
+    <table> <!-- defines a table -->
+        <thead> <!-- defines the rows that are the header -->
+            <tr>
+                <th>Animal</th> <!-- th = table header, a cell that is a header -->
+                <th>Average mass
+                    [kg (lb)]</th>
+                <th>Maximum mass
+                    [kg (lb)]</th>
+                <th>Flighted</th>
+            </tr>
+        </thead>
+        <tbody> <!-- define the rows that are the body -->
+            <tr>
+                <!-- tr = table row, creates a table row -->
+                <td>Ostrich</td> <!-- td = table data cell, aka table cell -->
+                <td>104(230)</td>
+                <td>156.8 (346)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td> <!-- td = table data cell, aka table cell -->
+                <td>90(200)</td>
+                <td>130 (287)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td> <!-- td = table data cell, aka table cell -->
+                <td>13.5 (29.8)</td>
+                <td>39 (86)</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>V2</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Animal</th> <!-- th = table header, a cell that is a header -->
+                <!-- rowspan = how many rows it will use, pushes following to the right -->
+                <th colspan="2">Avg. Mass</th> <!-- colspan = how many columns it will user -->
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <tr>
+                <th>kg</th>
+                <th>lbs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- tr = table row, creates a table row -->
+                <td>Ostrich</td> <!-- td = table data cell, aka table cell -->
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td> <!-- td = table data cell, aka table cell -->
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td> <!-- td = table data cell, aka table cell -->
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

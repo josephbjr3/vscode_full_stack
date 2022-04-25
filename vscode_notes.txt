@@ -6,4 +6,4 @@ duplicate to line above - shift + alt + up
 move a line up opt + up
 move a line down opt + down
 
-comment line 
+comment line cmd + /

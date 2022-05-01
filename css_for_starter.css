@@ -1,0 +1,109 @@
+/* this lesson goess over css selectors */
+* { /* makes everything that can be made pink, pink */
+    color: pink;
+}
+
+button { /* makes all buttons have a font size of 30 */
+    font-size: 30px;
+    background-color: aqua;
+}
+
+#sign_up { /* make the html element with id "sign_up" have a background color of green */
+    background-color: green; 
+}
+
+h1, h2 { /* makes all h1 and h2 headers red */
+    color: blue;
+}
+
+body {
+    background-color: black;
+}
+
+span {
+    color: red;
+}
+
+.tag { /* makes all html elements the "tag" class have a background color of lightgreen */
+    background-color: lightgreen;
+}
+
+span a { /* descendant selector/combinator ex: makes all anchor tags inside a span have white text */
+    color: white;
+}
+
+.post a{ /* can do descendant selectors with classes too (as well as other html attributes */
+    color: yellow;
+}
+
+footer a{
+    color: lightblue;
+}
+
+/* adjacent selector ex: make the buttons that come right after an input element have a back ground color of blue
+note - the elements are not nested but come one after the other */
+input + button {
+    background-color: blue;
+}
+
+/* direct child selector ex: link the descendent selector but only 1 level down */
+footer > a {
+    color: lightgreen;
+}
+
+/* attribute selector ex: can select an html element with a specific attr. */
+input[type="password"] {
+    color: red;
+}
+
+/* href attribute selector ex: anchor elements with an href containing "#345adas" */
+a[href*="#345adas"] {
+    color: white;    
+}
+
+/* psuedo class hover selector ex: perform "x" action when hovering over "y" html element */
+button:hover {
+    background-color: white;
+}
+
+/* more advanced psuedo class hover selector ex: only considers buttons with the class "post" */
+.post button:hover {
+    background-color: purple;
+}
+
+/* psuedo class active selector ex: perform "x" action when click initiated on on "y" html element */
+.post button:active {
+    background-color: green;
+}
+
+/* psuedo class nth of type selector ex: every 2 <html element> perform "x" action */
+.post:nth-of-type(2n) { /* '2' will only select the 2nd html element with class "post", it won't repeat */
+    background-color: darkgray;
+}
+
+/* psuedo element first letter selector ex: the first letter of every h2, make turquoise */
+h2::first-letter {
+    color: turquoise;
+}
+
+/* psuedo element first line selector ex: like first letter, but does the first line instead */
+p::first-line {
+    color: red;
+}
+
+/* psuedo element selection selector ex: changes the highlight color of paragraphs to green */
+p::selection {
+    color: green;
+}
+/* NOTE: Specificity - the more specific a css selector is, the higher it's priority when being applied. 
+id > class > element */
+
+/* NOTE: If you modify the same element twice (and each modifcaiton has the same level of specificity,
+the last modification will overwrite previous modificaitons. This is "cascading" */
+
+/* NOTE: don't use but know : inline styles (css styling on the html doc) have the higher specificity than id's
+         "!important" give that modification the highest specificity (i.e. color: green; !important) */
+
+/* NOTE: CSS inheritance: some html elements inherit some css modifcations/properties from parent elements by default */
+
+

@@ -7,3 +7,5 @@ move a line up opt + up
 move a line down opt + down
 
 comment line cmd + /
+
+type in multiple line at once opt + click the lines you want

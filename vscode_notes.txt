@@ -24,5 +24,5 @@ highlight word to the right: shift + opt + right
 
 terminal command to open a file: open <file.ext>
 
-test
+html standard boilerplate: type html > select html:5
 

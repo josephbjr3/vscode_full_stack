@@ -21,3 +21,8 @@ highlight line of text to the right: shift + cmd + right
 
 highlight word to the left: shift + opt + left
 highlight word to the right: shift + opt + right
+
+terminal command to open a file: open <file.ext>
+
+test
+

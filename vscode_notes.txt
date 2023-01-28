@@ -1,11 +1,23 @@
 Shortcut:
 
-duplicate to line below - shift + alt + down
-duplicate to line above - shift + alt + up
+duplicate to line below: shift + alt/opt + down
+duplicate to line above: shift + alt/opt + up
 
-move a line up opt + up
-move a line down opt + down
+move a line up: opt + up
+move a line down: opt + down
 
-comment line cmd + /
+comment line: cmd + /
 
-type in multiple line at once opt + click the lines you want
+type in multiple line at once: opt + click the lines you want
+
+backspace a whole line: cmd + backspace
+
+backspace a whole word: opt + backspace
+
+delete a whole line: ctrl + k
+
+highlight line of text to the left: shift + cmd + left
+highlight line of text to the right: shift + cmd + right
+
+highlight word to the left: shift + opt + left
+highlight word to the right: shift + opt + right

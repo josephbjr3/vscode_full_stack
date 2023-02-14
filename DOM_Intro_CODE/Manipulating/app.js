@@ -1,12 +1,15 @@
-const allLinks = document.querySelectorAll('a');
+//getElementById example
+let tableOfContents = document.getElementById('toc')
+console.dir(tableOfContents)
 
-// for (let link of allLinks) {
-//     link.innerText = 'I AM A LINK!!!!'
-// }
+//getElementsByTagName example
+let allImages = document.getElementsByTagName('img')
+for (let img of allImages) {
+    console.log(img.src)
+}
 
-
-for (let link of allLinks) {
-    link.style.color = 'rgb(0, 108, 134)';
-    link.style.textDecorationColor = 'magenta';
-    link.style.textDecorationStyle = 'wavy'
+//get allSquareImages example
+let allSquareImages = document.getElementsByClassName('square')
+for (let img of allSquareImages) {
+    img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Partridge_Silkie_hen.jpg/900px-Partridge_Silkie_hen.jpg';
 }

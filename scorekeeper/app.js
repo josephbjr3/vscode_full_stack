@@ -25,8 +25,7 @@ winningScoreMenu.addEventListener("change", function (e) {
     }
     else if (p1score < winningScore || p2score < winningScore) {
         disablePlayerBtns()
-        p1ScoreDisplay.style.color = "black"
-        p2ScoreDisplay.style.color = "black"
+        makeScoresBlk()
     }
 })
 
@@ -53,8 +52,14 @@ reset.addEventListener('click', function (e) {
     p2score = 0
     setP1ScoreSpan()
     setP2ScoreSpan()
+    makeScoresBlk()
     disablePlayerBtns()
 })
+
+function makeScoresBlk() {
+    p1ScoreDisplay.style.color = "black"
+    p2ScoreDisplay.style.color = "black"
+}
 
 function setP1ScoreSpan() {
     p1ScoreDisplay.textContent = p1score
@@ -64,7 +69,8 @@ function setP2ScoreSpan() {
 }
 
 function p2WonColors() {
-    p2WonColors()
+    p1ScoreDisplay.style.color = "red"
+    p2ScoreDisplay.style.color = "green"
 }
 
 function disablePlayerBtns() {

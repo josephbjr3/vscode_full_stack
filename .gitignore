@@ -2,4 +2,4 @@
 /Other_Properties/**
 
 # Except for the HoverButton folder
-!/Other_Properties/HoverButton/**
+!/Other_Properties/HoverButton/

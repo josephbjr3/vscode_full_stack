@@ -3,3 +3,6 @@
 
 # Except for the HoverButton folder
 !/Other_Properties/HoverButton/
+
+#ignore downloads folder
+/downloads/

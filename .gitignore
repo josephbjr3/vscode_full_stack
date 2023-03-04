@@ -4,9 +4,9 @@
 # Except for "x" folder/file
 !/Other_Properties/HoverButton/
 # !/Other_Properties/PhotoSite/
-# /Other_Properties/PhotoSite/*
-!/Other_Properties/PhotoSite/Starter/
-!/Other_Properties/PhotoSite/README.md
+# # /Other_Properties/PhotoSite/*
+# !/Other_Properties/PhotoSite/Starter/
+# !/Other_Properties/PhotoSite/README.md
 
 
 

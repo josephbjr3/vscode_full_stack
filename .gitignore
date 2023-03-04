@@ -1,5 +1,5 @@
 # Ignore all folders in Other_Properties folder
-/Other_Properties/**
+/Other_Properties/*
 
 # Except for "x" folder/file
 !/Other_Properties/HoverButton/

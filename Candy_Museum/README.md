@@ -1,4 +1,4 @@
-This project utilizes bootstrap create a website that creatively displays photos and text.
+This project utilizes bootstrap and meadia queries to creatively display photos and text.
 
 To view the HTML I started with, view the "index_starter.html" file. I did not write this code.
 

@@ -34,6 +34,9 @@ body {
         font-weight: 100;
         font-size: 3rem;
     }
+    .blub h2 {
+        font-size: 2rem;
+    }
 }
 
 .blurb h2 {
@@ -58,5 +61,5 @@ body {
 
 .navbar.scrolled { /*note: scrolled not used in the html but it's a bootstrap class */
     background: rgb(222,192,222);
-    transition: 500ms;
+    transition: background 500ms;
 }

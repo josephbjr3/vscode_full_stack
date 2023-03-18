@@ -8,19 +8,54 @@
     <title>Ping Pong Score keeper</title>
 </head>
 <body>
-    <h1>Ping Pong Score Keeper</h1>
-    <h2> <span id="p1ScoreDisplay">0</span> to <span id="p2ScoreDisplay">0</span> </h2>
-    <p>Use the buttons below to keep score.</p>
-    <label for="winningScoreMenu">Playing To</label>
-    <select id="winningScoreMenu">
-        <option value="7">7</option>
-        <option value="10">10</option>
-        <option value="21">21</option>
-    </select>
-    <button id="p1ScoreBtn">+1 Player One</button>
-    <button id="p2ScoreBtn">+1 Player Two</button>
-    <button id="resetBtn">reset</button>
-
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <!-- card code copied from bulma-->
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+                                        alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                          <p class="card-header-title">
+                            Ping Pong Score Keeper
+                          </p> 
+                        </header>
+                        <div class="card-content">
+                          <div class="content">  
+                            <h1 class="title is-1"> <span id="p1ScoreDisplay">0</span> to <span id="p2ScoreDisplay">0</span> </h1>
+                            <p class="subtitle">Use the buttons below to keep score
+                            </p>
+                            <label for="winningScoreMenu" class="label is-large is-inline">Playing To</label>
+                            <div class="select is-rounded">
+                                <select id="winningScoreMenu">
+                                    <option value="7">7</option>
+                                    <option value="10">10</option>
+                                    <option value="21">21</option>
+                                </select>
+                            </div>                        
+                          </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1ScoreBtn" class="is-primary button card-footer-item is-large">
+                                +1 Player One
+                            </button>
+                            <button id="p2ScoreBtn" class="is-info button card-footer-item is-large">
+                                +1 Player Two
+                            </button>
+                            <button id="resetBtn" class="is-danger button card-footer-item is-large">
+                                Reset
+                            </button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
     <script src="app.js"></script>
 </body>
 </html>

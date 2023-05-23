@@ -1,0 +1,16 @@
+{
+  "name": "lang-guesser",
+  "version": "1.0.0",
+  "description": "takes input guesses which language it is",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Brinkley",
+  "license": "ISC",
+  "dependencies": {
+    "franc": "^6.1.0",
+    "langs": "^2.0.0"
+  }
+}

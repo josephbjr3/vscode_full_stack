@@ -2,12 +2,14 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const { v4: uuid } = require('uuid'); //note: ": uuid" renames "v4" to "uuid"
+const methodOverride = require('method-override')
 
  
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.use(express.urlencoded({ extended:true }))
+app.use(methodOverride('_method'))
 
 app.get('/tacos', (req,res) => {
     res.send("/GET tacos response")
@@ -18,7 +20,7 @@ app.post('/tacos', (req,res) => {
     res.send("/POST tacos response")
 })
 
-const comments = [
+let comments = [
     { 
         id: uuid(),
         username: "Todd",
@@ -57,6 +59,27 @@ app.get('/comments/:id', (req, res) => {
     const { id } = req.params
     const comment = comments.find(c => c.id === id)
     res.render('comments/show', { comment })
+
+})
+app.get('/comments/:id/edit', (req, res) => {
+    const { id } = req.params
+    const comment = comments.find(c => c.id === id)
+    res.render('comments/edit', { comment })
+
+})
+
+app.patch('/comments/:id', (req, res) => {
+    const { id } = req.params
+    const newComment = req.body.comment
+    const currentComment = comments.find(c => c.id === id)
+    currentComment.comment = newComment
+    res.redirect('/comments')
+})
+
+app.delete('/comments/:id', (req, res) => {
+    const { id } = req.params
+    comments = comments.filter(c => c.id !== id) //returns a new array so you need to reassign comments variable
+    res.redirect('/comments') 
 
 })
 app.listen(3000, () => {

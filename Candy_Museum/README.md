@@ -1,4 +1,4 @@
-This project utilizes bootstrap, meadia queries, and jquery to creatively display photos and text.
+This project utilizes bootstrap, media queries, and jquery to creatively display photos and text.
 
 To view the HTML I started with, view the "index_starter.html" file. I did not write this code.
 

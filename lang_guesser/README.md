@@ -1,0 +1,1 @@
+This project uses the 'franc' library to detect the language of a given text provided as a command-line argument and prints either an error message for undetermined languages or the corresponding language name using the 'langs' library.

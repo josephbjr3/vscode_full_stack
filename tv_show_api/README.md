@@ -1,0 +1,1 @@
+This project is a simple webpage with a TV show search form. It utilizes the Axios library to send an asynchronous request to the TVMaze API based on the user's input, and dynamically displays images of TV shows returned by the API in response to the search query.

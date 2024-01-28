@@ -1,2 +1,2 @@
-the html and css was written by the instructor
-the js was written by me
+The html and css was written by the instructor.
+The js was written by me.
